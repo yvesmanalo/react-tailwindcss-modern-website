@@ -56,22 +56,25 @@ export default function Navbar() {
       </div>
       {mobileMenuIsOpen && (
         <div className="md:hidden bg-slate-900/95 backdrop-blur-lg border-t border-slate-800  animate-in slide-in-from-top duration-300">
-          <div>
+          <div className="px-4 py-4 sm:py-6 space-y-3 sm:space-y-4">
             <a
               href="#features"
-              className="text-gray-300 hover:text-white text-sm lg:text-base"
+              className="block text-gray-300 hover:text-white text-sm lg:text-base"
+              onClick={() => setMobileMenuIsOpen(false)}
             >
               Features
             </a>
             <a
               href="#pricing"
-              className="text-gray-300 hover:text-white text-sm lg:text-base"
+              className="block text-gray-300 hover:text-white text-sm lg:text-base"
+              onClick={() => setMobileMenuIsOpen(false)}
             >
               Pricing
             </a>
             <a
               href="#testimonials"
-              className="text-gray-300 hover:text-white text-sm lg:text-base"
+              className="block text-gray-300 hover:text-white text-sm lg:text-base"
+              onClick={() => setMobileMenuIsOpen(false)}
             >
               Testimonials
             </a>
